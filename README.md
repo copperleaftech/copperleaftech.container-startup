@@ -24,7 +24,7 @@ Input is a dictionarty of service names and respective path
 ```
   roles:
   - {
-     role: dhdanno.container-startup,
+     role: copperleaftech.container-startup,
      services: [
        {  name: 'myservice1',
           path: '/data/<myservicepath>'
