@@ -1,5 +1,5 @@
-# dhdanno.container-startup
-Playbook role for automatically starting your compose based docker services by adding them to the relevant service manager for your OS
+# copperleaftech.container-startup
+Ansible role for automatically starting your compose based docker services by adding them to the relevant service manager for your OS (only systemd right now, please contribute for other startp managers if you can!)
 
 This allows docker-compose application stacks to be handled as native OS services with regard to state maintenance and allows them to auto-start on boot.
 
