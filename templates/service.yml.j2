@@ -1,0 +1,14 @@
+[Unit]
+Description={{ item.name }} Startup Script
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+WorkingDirectory={{ item.path }}
+ExecStart=/usr/local/bin/docker-compose up
+ExecStop=/usr/local/bin/docker-compose/docker-compose down
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
